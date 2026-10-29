@@ -13,11 +13,11 @@ namespace ZombieParty.Models.Data
         public DbSet<ZombieType> ZombieType { get; set; }
         public DbSet<Weapon> Weapon { get; set; }
 
-        protected override void OnModelCreating(ModelBuilder modelBuilder)
-        {
-            modelBuilder.Entity<ZombieType>().HasData(DB.ZombieTypes);
-            modelBuilder.Entity<Zombie>().HasData(DB.Zombies);
-            modelBuilder.Entity<Weapon>().HasData(DB.Weapons);
-        }
+        //protected override void OnModelCreating(ModelBuilder modelBuilder)
+        //{
+        //    modelBuilder.Entity<ZombieType>().HasData(DB.ZombieTypes);
+        //    modelBuilder.Entity<Zombie>().HasData(DB.Zombies);
+        //    modelBuilder.Entity<Weapon>().HasData(DB.Weapons);
+        //}
     }
 }
